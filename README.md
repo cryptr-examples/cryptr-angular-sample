@@ -24,3 +24,5 @@ cd shark-academy-angular-template
 We used yarn, but you can use npm if you're more used to it.
 
 ---
+
+[Next](https://github.com/cryptr-examples/cryptr-angular-sample/tree/02-application-keys)
