@@ -1,13 +1,12 @@
 # Cryptr with Angular
 
-## [01 Get the Starter Application](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/01-get-the-starter-application)
+## 05 Conclusion
 
-## [02 Application Keys](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/02-application-keys)
+Congratulations if you made it to the end! Now, let's recap everything that has been covered in the tutorial:
 
-## [03 Set up the Cryptr Angular SDK](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/03-set-up-the-cryptr-angular-sdk)
+- Integrated user authentication with Cryptr  
+- Protecting routes  
+- Simple sign up, login and logout  
+- Getting user profile information  
 
-## [04 Signup](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/04-signup)
-
-## [05 Add user authentication](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/05-add-user-authentication)
-
-## [06 Conclusion](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/06-conclusion)
+I hope this was helpful, and thanks for reading! 🙂
