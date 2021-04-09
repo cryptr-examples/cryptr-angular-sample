@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '@cryptr/cryptr-angular';
 
 @Component({
   selector: 'app-profile',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+  authenticated = false;
 
-  constructor() { }
+  constructor(public auth: AuthService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.auth.observableAuthenticated().subscribe((isAuthenticated: boolean) => {
+      this.authenticated = isAuthenticated
+    })
   }
-
+  
+  getUserEmail() : string | undefined {
+    let user = this.auth.getUser();
+    if (this.authenticated && user) {
+      return user.email;
+    }
+  }
 }

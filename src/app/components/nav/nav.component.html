@@ -57,14 +57,20 @@
           >
         </div>
       </div>
-      <button type="button"
+      <button
+        *ngIf="!authenticated"
+        (click)="signInWithRedirect()"
+        type="button"
         class="relative inline-flex items-center px-5 py-3 border border-transparent text-base uppercase leading-5 font-bold rounded-md text-yellow-500 shadow-md hover:shadow-xl focus:outline-none transition duration-150 ease-in-out">
         <span>Login</span>
       </button>
-      <!-- <button type="button"
+      <button
+        *ngIf="authenticated"
+        (click)="logOut()" 
+        type="button"
         class="relative inline-flex items-center px-5 py-3 border border-transparent text-base uppercase leading-5 font-bold rounded-md text-yellow-500 shadow-md hover:shadow-xl focus:outline-none transition duration-150 ease-in-out">
         Logout
-      </button> -->
+      </button>
     </div>
   </div>
 </nav>

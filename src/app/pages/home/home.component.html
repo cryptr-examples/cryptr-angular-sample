@@ -32,6 +32,8 @@
         </p>
         <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <button
+            *ngIf="!authenticated"
+            (click)="signUpWithRedirect()"
             class="cursor-pointer sm:mr-8 md:mr-10"
           >
             <div class="rounded-md shadow">
