@@ -109,3 +109,5 @@ export class AppRoutingModule { }
 This update will allow your app to handle the end of the authentication process from Cryptr.
 
 You are ready to implement the authentication flow.
+
+[Next](https://github.com/cryptr-examples/cryptr-angular-sample/tree/04-add-user-authentication)
