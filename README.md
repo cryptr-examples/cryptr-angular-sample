@@ -1,13 +1,31 @@
 # Cryptr with Angular
 
-## [01 Get the Starter Application](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/01-get-the-starter-application)
+## 02 Application Keys
 
-## [02 Application Keys](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/02-application-keys)
+### Add your Cryptr credentials
 
-## [03 Set up the Cryptr Angular SDK](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/03-set-up-the-cryptr-angular-sdk)
+🛠 To use these variables in your Angular application, replace the content of `src/environments/environment.ts` with the variables that you get when creating your application at the end of Cryptr Onboarding or on your Cryptr application. Don't forget to replace `YOUR_CLIENT_ID` & `YOUR_DOMAIN`
 
-## [04 Signup](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/04-signup)
+Your environment file should look like this:
 
-## [05 Add user authentication](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/05-add-user-authentication)
+``` javascript
 
-## [06 Conclusion](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/06-conclusion)
+export const environment = {
+  production: false,
+  cryptrConfig: {
+    audience: 'http://localhost:4200',
+    tenant_domain: 'YOUR_DOMAIN',
+    client_id: 'YOUR_CLIENT_ID',
+    default_redirect_uri: 'http://localhost:4200/',
+    // region: 'us',
+    cryptr_base_url: 'https://cleeck-umbrella-staging-eu.onrender.com',
+    default_locale: 'fr',
+    httpInterceptor: {
+      apiRequestsToSecure: ['http://localhost:5000/*'],
+    },
+    telemetry: false,
+  },
+  resource_server_url: 'http://localhost:5000',
+};
+
+```
