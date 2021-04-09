@@ -1,13 +1,26 @@
 # Cryptr with Angular
 
-## [01 Get the Starter Application](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/01-get-the-starter-application)
+## 01 Get the Starter Application
 
-## [02 Application Keys](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/02-application-keys)
+🛠 Clone the shark-academy-angular-template repository to get started:
 
-## [03 Set up the Cryptr Angular SDK](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/03-set-up-the-cryptr-angular-sdk)
+```bash
+git clone https://github.com/cryptr-examples/shark-academy-angular-template.git
+```
 
-## [04 Signup](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/04-signup)
+🛠 Once you’ve cloned the repo, go to shark-academy-angular-template with command:
 
-## [05 Add user authentication](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/05-add-user-authentication)
+```bash
+cd shark-academy-angular-template
+```
 
-## [06 Conclusion](https://github.com/cryptr-examples/cryptr-vue2-sample/tree/06-conclusion)
+🛠 Install the Angular project dependencies with `yarn` or `yarn install`
+  
+🛠 Finally, run the Angular application with `ng serve` or `yarn start`
+
+---
+**NOTE**
+
+We used yarn, but you can use npm if you're more used to it.
+
+---
