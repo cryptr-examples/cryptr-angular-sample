@@ -5,8 +5,7 @@ export const environment = {
     tenant_domain: 'shark-academy',
     client_id: 'ab76295e-39d2-479b-ad06-eda1564dc729',
     default_redirect_uri: 'http://localhost:4200/',
-    // region: 'us',
-    cryptr_base_url: 'https://cleeck-umbrella-staging-eu.onrender.com',
+    cryptr_base_url: 'https://auth.cryptr.eu',
     default_locale: 'fr',
     httpInterceptor: {
       apiRequestsToSecure: ['http://localhost:5000/*'],

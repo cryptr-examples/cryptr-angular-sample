@@ -17,8 +17,7 @@ export const environment = {
     tenant_domain: 'YOUR_DOMAIN',
     client_id: 'YOUR_CLIENT_ID',
     default_redirect_uri: 'http://localhost:4200/',
-    // region: 'us',
-    cryptr_base_url: 'https://cleeck-umbrella-staging-eu.onrender.com',
+    cryptr_base_url: 'https://auth.cryptr.eu',
     default_locale: 'fr',
     httpInterceptor: {
       apiRequestsToSecure: ['http://localhost:5000/*'],
@@ -29,5 +28,7 @@ export const environment = {
 };
 
 ```
+
+Note: __If you are from the EU, you must add `https://auth.cryptr.eu/` in the `CRYPTR_BASE_URL` variable, and if you are from the US, you must add `https://auth.cryptr.us/` in the same variable.__
 
 [Next](https://github.com/cryptr-examples/cryptr-angular-sample/tree/03-set-up-the-cryptr-angular-sdk)
