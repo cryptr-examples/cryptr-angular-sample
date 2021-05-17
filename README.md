@@ -29,6 +29,6 @@ export const environment = {
 
 ```
 
-Note: __If you are from the EU, you must add `https://auth.cryptr.eu/` in the `CRYPTR_BASE_URL` variable, and if you are from the US, you must add `https://auth.cryptr.us/` in the same variable.__
+Note: __If you are from the EU, you must add `https://auth.cryptr.eu/` in the `cryptr_base_url` variable, and if you are from the US, you must add `https://auth.cryptr.us/` in the same variable.__
 
 [Next](https://github.com/cryptr-examples/cryptr-angular-sample/tree/03-set-up-the-cryptr-angular-sdk)
