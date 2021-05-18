@@ -16,19 +16,18 @@ export const environment = {
     audience: 'http://localhost:4200',
     tenant_domain: 'YOUR_DOMAIN',
     client_id: 'YOUR_CLIENT_ID',
-    default_redirect_uri: 'http://localhost:4200/',
-    cryptr_base_url: 'https://auth.cryptr.eu',
-    default_locale: 'fr',
+    region: 'eu',
+    default_redirect_uri: 'http://localhost:4200',
     httpInterceptor: {
       apiRequestsToSecure: ['http://localhost:5000/*'],
     },
     telemetry: false,
   },
   resource_server_url: 'http://localhost:5000',
-};
+} 
 
 ```
 
-Note: __If you are from the EU, you must add `https://auth.cryptr.eu/` in the `cryptr_base_url` variable, and if you are from the US, you must add `https://auth.cryptr.us/` in the same variable.__
+Note: __You can include an API URL in `httpInterceptor` and `resource_server_url` that does not exist yet. If you don't have an API, that's OK, there just has to be a URL, even if it is not used. Later on when you create an API, you can update the URL in your environment file__
 
 [Next](https://github.com/cryptr-examples/cryptr-angular-sample/tree/03-set-up-the-cryptr-angular-sdk)
