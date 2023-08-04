@@ -2,53 +2,6 @@
 
 ## 04 Add user authentication
 
-### Signup
-
-🛠 Open up `home.component.ts` file in the `src/app/pages/home/` and paste the following code:
-
-``` javascript
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from '@cryptr/cryptr-angular';
- 
-@Component({
- selector: 'app-home',
- templateUrl: './home.component.html',
- styleUrls: ['./home.component.scss']
-})
-export class HomeComponent implements OnInit {
- authenticated = false;
- constructor(public auth: AuthService) { }
- 
- ngOnInit(): void {
-   this.auth.currentAuthenticationObservable().subscribe((isAuthenticated: boolean) => {
-     this.authenticated = isAuthenticated;
-   });
- }
- 
- signUpWithRedirect(): void {
-   this.auth.signUpWithRedirect();
- }
-}
-```
-
-🛠 Next, open up `home.component.html` template file in `src/app/pages/home/` and modify button like this:
-
-``` javascript
-<button
-  *ngIf="!authenticated"
-  (click)="signUpWithRedirect()"
-  class="cursor-pointer sm:mr-8 md:mr-10"
->
-  <div class="rounded-md shadow">
-    <a
-      class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-sm leading-6 font-bold shadow-md rounded-md uppercase text-gray-900 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:border-yellow-500 focus:shadow-outline-yellow transition duration-150 ease-in-out md:py-3 md:text-base md:px-10"
-    >
-      Signup
-    </a>
-  </div>
-</button>
-```
-
 ### Login and logout
 
 🛠 Open up `nav.component.ts` file in `src/app/components/nav/` and paste the following code:
