@@ -62,7 +62,7 @@ export class NavComponent implements OnInit {
 </button>
 ```
 
-🛠 Run server & try to connect. Your Angular application redirects you to your sign form page, where you can sign in or sign up with an email.
+🛠 Run server & try to connect. Your Angular application redirects you to your gateway sign page, where you can sign in or sign up with an email and related authenticated process (SSO, magic link, password...)
 
 ---
 **SANDBOX EMAIL**
