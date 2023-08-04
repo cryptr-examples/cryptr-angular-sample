@@ -1244,10 +1244,10 @@
   resolved "https://registry.yarnpkg.com/@cryptography/sha256/-/sha256-0.2.0.tgz#45d785be6b5928fd44ab59465ef3d6f611769215"
   integrity sha512-BptcDkQWplfUjMJAxewmMN/O8JD19cwJM6XUFQrqaCDMYt5e40Czm4S7BEFc+PN7dElNH79ik687/5aMk4uDSQ==
 
-"@cryptr/cryptr-angular@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@cryptr/cryptr-angular/-/cryptr-angular-1.2.0.tgz#f4322a8497bbc74e5d99618ed1b0bbf74680e82b"
-  integrity sha512-44Ae7obB87AzcDxio0waEu79xhZQ4iIA/NlP/SZVwsn0AcU8MrSEzoeuen1Kr6fz8Vq7+v4YjPbvA9Ey1/07Tg==
+"@cryptr/cryptr-angular@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@cryptr/cryptr-angular/-/cryptr-angular-1.2.1.tgz#fb272328aa3fe7a5952d45e628ac7fba99835cbf"
+  integrity sha512-LPhm1ak2WKHPrZ8vf/S7P71luR+O7fyjOCrgQXMJYEB/ntgO6pyWEfdS9wrxD5iOMR7NFvNvCB6DdFvVCDc4kw==
   dependencies:
     "@cryptr/cryptr-spa-js" "^1.2.0"
     tslib "^2.0.0"
