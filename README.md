@@ -36,7 +36,7 @@ export class NavComponent implements OnInit {
  }
  
  signInWithRedirect(): void {
-   this.auth.signInWithRedirect();
+   this.auth.signInWithDomain();
  }
 }
 ```
