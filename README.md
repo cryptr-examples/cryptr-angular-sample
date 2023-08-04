@@ -4,7 +4,7 @@
 
 ### Add your Cryptr credentials
 
-🛠 To use these variables in your Angular application, replace the content of `src/environments/environment.ts` with the variables that you get when creating your application at the end of Cryptr Onboarding or on your Cryptr application. Don't forget to replace `YOUR_CLIENT_ID` & `YOUR_DOMAIN`
+🛠 To use these variables in your Angular application, replace the content of `src/environments/environment.ts` with the variables that you get when creating your application at the end of Cryptr Onboarding or on your Cryptr application. Don't forget to replace `YOUR_CLIENT_ID` , `YOUR_DOMAIN` & `YOUR_CRYPTR_SERVICE_URL`
 
 Your environment file should look like this:
 
@@ -16,12 +16,14 @@ export const environment = {
     audience: 'http://localhost:4200',
     tenant_domain: 'YOUR_DOMAIN',
     client_id: 'YOUR_CLIENT_ID',
-    region: 'eu',
+    cryptr_base_url: 'YOUR_CRYPTR_SERVICE_URL',
     default_redirect_uri: 'http://localhost:4200',
     httpInterceptor: {
       apiRequestsToSecure: ['http://localhost:5000/*'],
     },
     telemetry: false,
+    dedicated_server: true,
+    fixed_pkce: true
   },
   resource_server_url: 'http://localhost:5000',
 } 
